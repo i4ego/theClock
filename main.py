@@ -1,5 +1,5 @@
 import time as cat
-import time_modern, date_modern
+import time_modern, date_modern, week_days_modern
 from os import system
 
 
@@ -14,6 +14,12 @@ while 1:
 
     line_length = int()
     for line in date_modern.getDate():
+        line_length = len(line)
+        print(line)
+    print("_"*line_length)
+
+    line_length = int()
+    for line in week_days_modern.getWeek():
         line_length = len(line)
         print(line)
     print("_"*line_length)
